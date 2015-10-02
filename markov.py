@@ -46,7 +46,29 @@ class SimpleMarkovGenerator(object):
             words.append(word)
             key = (key[1], word)
 
-        print " ".join(words)
+        text_string = " ".join(words)
+        return text_string
+
+class TweetableMarkovGenerator(SimpleMarkovGenerator):
+
+    def make_text(self, chains):
+
+
+    # def textlength(self, text_string):
+    #     chars = 140
+    #     if text_string > chars:
+    #         print text_string[0:142]
+    #     else:
+    #         print text_string
+
+
+# Define a superclass - Simple Markov 
+    # define an attribute that specifies how much text to print
+    # last_index = -1 
+
+    # Define a method that prints  text
+        # print text[0:last_in]
+
 
 if __name__ == "__main__":
 
